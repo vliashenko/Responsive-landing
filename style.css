@@ -1496,9 +1496,13 @@ color: var( --text-color);
     height: 3em;
     line-height: 3;
     text-align: center;
-    -webkit-transition: all .35s;
-    -o-transition: all .35s;
-    transition: all .35s;
+    -webkit-transition: all .35s ease-in-out;
+    -o-transition: all .35s ease-in-out;
+    transition: all .35s ease-in-out;
+}
+
+.tab input[type=checkbox]:checked + label i {
+    transform: rotate(180deg);
 }
 
 .accordion-second-col {
@@ -1704,8 +1708,7 @@ color: var( --text-color);
     margin-top: 2rem;
     }
 }
-.third-col-contacts {
-}
+
 .third-col-contacts-title {
     margin-left: 2rem;
     font-size: 18px;
@@ -1735,8 +1738,6 @@ color: var( --text-color);
     }
 }
 
-.contacts-item-info {
-}
 .fa-instagram {
     position: relative;
     top: 4px;
